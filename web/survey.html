@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1>Murach Survey</h1>
+
+    <!-- BƯỚC 8: THÊM LOGO Ở ĐẦU TRANG -->
+    <img src="images/murachlogo.jpg" alt="Murach Logo"><br><br>
+
+    <form action="#" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- BƯỚC 9: THÊM NGÀY SINH (OPTIONAL) -->
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <p>What’s your favorite search engine?</p>
+
+        <!-- BƯỚC 10: ĐẶT SEARCH ENGINE LÀ DEFAULT -->
+        <input type="radio" id="google" name="engine" value="Google" checked>
+        <label for="google">Google</label>
+
+        <input type="radio" id="bing" name="engine" value="Bing">
+        <label for="bing">Bing</label>
+
+        <input type="radio" id="yahoo" name="engine" value="Yahoo">
+        <label for="yahoo">Yahoo</label>
+
+        <!-- BƯỚC 11: THÊM SOCIAL MEDIA -->
+        <input type="radio" id="social" name="engine" value="Social Media">
+        <label for="social">Social Media</label>
+
+        <input type="radio" id="other" name="engine" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <p>Check the items you like:</p>
+        <!-- BƯỚC 12: THÊM CHECKBOX EMAILOK, KHÔNG CÁI NÀO CHECK DEFAULT -->
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Receive updates</label><br>
+
+        <input type="checkbox" id="emailOK" name="emailOK">
+        <label for="emailOK">YES, please send me email announcements.</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
