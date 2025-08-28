@@ -1,7 +1,11 @@
 FROM tomcat:9.0
 
-# Copy file WAR từ root vào thư mục webapps của Tomcat
-COPY build/Email.war /usr/local/tomcat/webapps/Email.war
+# 1) Copy WAR của bạn (đang deploy dưới /Email)
+#    Nếu file nằm ở repo root:
+COPY Email.war /usr/local/tomcat/webapps/Email.war
 
-# Tomcat mặc định chạy port 8080
+# 2) Copy landing page vào ROOT để phục vụ tại /
+#    Thư mục ROOT sẽ được tạo nếu chưa tồn tại.
+COPY index.html /usr/local/tomcat/webapps/ROOT/index.html
+
 EXPOSE 8080
