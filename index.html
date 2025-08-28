@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survey Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Modern, minimal landing page" />
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur border-b">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="text-lg font-semibold tracking-tight">Survey App</div>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a class="hover:text-gray-900 text-gray-600" href="#">Home</a>
+        <a class="hover:text-gray-900 text-gray-600" href="#">About</a>
+        <a class="hover:text-gray-900 text-gray-600" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-5xl mx-auto px-4">
+    <section class="py-16 sm:py-24">
+      <div class="text-center">
+        <h1 class="text-3xl sm:text-5xl font-semibold leading-tight">
+          Welcome to <span class="text-blue-600">Survey App</span>
+        </h1>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          A clean, minimal landing to start your survey. Click below to begin.
+        </p>
+        <!-- NÚT DẪN VÀO FORM HIỆN TẠI -->
+        <a
+          href="/Email/survey.html"
+          class="inline-flex items-center justify-center mt-8 px-5 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+        >
+          Start Survey
+        </a>
+      </div>
+
+      <!-- Cards -->
+      <div class="mt-14 grid sm:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl shadow-sm p-6 border">
+          <h3 class="font-semibold">Simple</h3>
+          <p class="mt-2 text-sm text-gray-600">Clean layout with plenty of white space.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-6 border">
+          <h3 class="font-semibold">Modern</h3>
+          <p class="mt-2 text-sm text-gray-600">Minimal colors, smooth typography.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-6 border">
+          <h3 class="font-semibold">Fast</h3>
+          <p class="mt-2 text-sm text-gray-600">CDN-based styling, no heavy bundles.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-sm text-gray-500">
+      © 2025 Survey App. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
